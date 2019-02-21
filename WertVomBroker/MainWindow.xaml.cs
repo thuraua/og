@@ -44,11 +44,11 @@ namespace WertVomBroker
         }
         private void ButtonAus_Click(object sender, RoutedEventArgs e)
         {
-            client.Publish("villach/4BHIF/Schülername/Luefter", Encoding.ASCII.GetBytes("off"));
+            client.Publish("villach/4BHIF/Thurau/Luefter", Encoding.ASCII.GetBytes("off"));
         }
         private void ButtonEin_Click(object sender, RoutedEventArgs e)
         {
-            client.Publish("villach/4BHIF/Schülername/Luefter", Encoding.ASCII.GetBytes("on"));
+            client.Publish("villach/4BHIF/Thurau/Luefter", Encoding.ASCII.GetBytes("on"));
         }
         private void MqttMsgReceived(object sender, MqttMsgPublishEventArgs e)
         {
